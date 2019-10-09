@@ -1,0 +1,161 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import '~pea-styles/scss/text-body.scss';
+$pixiv-logo-color:#0074aa;
+#main{
+    .navbar{
+        .navbar-brand{
+            em{
+                color:$pixiv-logo-color;
+            }
+        }
+        .navbar-notice{
+            font-size: 16px;
+            font-weight: bold;
+            color:$red;
+            text-indent: 2em;
+            &::before{
+                content: '[公告] ';
+            }
+        }
+        .navbar-nav{
+            margin-left:auto;
+            .nav-item{
+                margin-left:10px;
+            }
+        }
+        @media (max-width:map-get($grid-breakpoints,"sm")){
+            .container{
+                width:100%;
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                .navbar-nav{
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+    &.page-index{
+        .jumbotron{
+            height: 100vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            clear:both;
+            margin-bottom: 0;
+            margin-top:-56px;//导航栏高度
+            padding-top:20px;
+            box-sizing: content-box;
+            .container{
+                box-sizing: border-box;
+                .pi-big-logo{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        max-height: 100%;
+                        width: 100%;
+                    }
+                }
+                .pi-header{
+                    margin-bottom: 1em;
+                }
+                .pi-body{
+                    &>*{
+                        margin-bottom: 0.5em;
+                    }
+                }
+                hr{
+                    margin-top:50px;
+                    margin-bottom:40px;
+                }
+                .pi-buttons{
+                    @extend .text-center;
+                    .btn{
+                        margin:0 50px;
+                        @media (min-width:map-get($grid-breakpoints,"xl")){
+                            @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-lg, $btn-border-radius-lg);
+                        }
+                    }
+                }
+            }
+            @media (max-width:map-get($grid-breakpoints,"md")){
+                margin-top:0;
+                align-items: flex-start;
+                padding-top:40px;
+                font-size:14px;
+                .container{
+                    .pi-header{
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 2em;
+                        h1{
+                            font-size: $display4-size;
+                            font-weight: $display4-weight;
+                            line-height: $display-line-height;
+                        }
+                        .pih-logo{
+                            height:$display4-size;
+                            width:$display4-size;
+                            display: flex;
+                            align-items: center;
+                            img{
+                                width:95%;
+                                margin-top:-18%;
+                            }
+                        }
+                    }
+                    .pi-body{
+                        &>*{
+                            margin-bottom: 1em;
+                        }
+                        h2{
+                            font-size:$font-size-h4;
+                        }
+                    };
+                    .pi-buttons{
+                        display: flex;
+                        justify-content: space-around;
+                        margin-top:3rem;
+                        .btn{
+                            @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $btn-border-radius-sm);
+                            margin:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.page-md{
+        background-color: #e8e8e8;
+        .text-body-container{
+            margin-top:30px;
+            max-width: 960px;
+            .text-body{
+                font-size:16px;
+                border:1px solid #8b8c8d;
+                padding:30px 30px 90px;
+                margin-bottom: 50px;
+                min-height:100vh;
+            }
+        }
+        @media (max-width:map-get($grid-breakpoints,"sm")){
+            .text-body-container{
+                .text-body{
+                    padding-left:0;
+                    padding-right:0;
+                    border:none;
+                }
+            }
+        }
+    }
+    .pxer-foot{
+        text-align: center;
+        padding-top:1.5em;
+        padding-bottom:0.7em;
+        background-color: #fff;
+        font-size:12px;
+        p{
+            margin:0;
+        }
+    }
+};

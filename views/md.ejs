@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <% include _head.ejs %>
+    <script src="/static/javascripts/md.js"></script>
+    <title><%= markdown.match(/<h\d[^>]*?>(.+?)<\/h\d>/im)[1] %></title>
+</head>
+<body>
+<div id="main" class="page-md">
+    <% include _nav.ejs %>
+    <div class="container text-body-container">
+        <div class="text-body col-"><%- markdown %></div>
+    </div>
+    <% include _foot.ejs %>
+</div>
+</body>
+</html>

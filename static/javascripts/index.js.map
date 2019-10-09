@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./index.js"],"names":["require"],"mappings":";;;;;;;;AAAA;AACA,mBAAAA,CAAQ,CAAR,E","file":"javascripts/index.js","sourcesContent":["//require('public/bootstrap/bootstrap-4.0.0-alpha.6/bootstrap.scss');\r\nrequire('src/stylesheets/style.scss');\r\n\r\n\n\n\n// WEBPACK FOOTER //\n// ./index.js"],"sourceRoot":""}

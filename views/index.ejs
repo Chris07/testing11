@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <% include _head.ejs %>
+    <script src="/static/javascripts/index.js"></script>
+    <title>Pxer 官方网站 - 可能是目前最好用的P站批量抓图软件</title>
+</head>
+<body>
+<div id="main" class="page-index">
+    <% include _nav.ejs %>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 hidden-sm-down pi-big-logo">
+                    <img src="/static/images/pxerlogo350-20170406.png" class="img-fluid" alt="logo">
+                </div>
+                <div class="col-md-8">
+                    <div class="pi-header">
+                        <div class="pih-logo">
+                            <img src="/static/images/pxerlogo350-20170406.png" class="img-fluid hidden-md-up" alt="">
+                        </div>
+                        <h1 class="display-3">Pxer 7</h1>
+                    </div>
+                    <div class="pi-body">
+                        <h2>可能是目前最好用的P站批量抓图软件</h2>
+                        <div class="lead">
+                            <ul>
+                                <li>快速抓取画师的<strong>所有</strong>作品/收藏</li>
+                                <li>抓取搜索结果并按标签、评分等信息<strong>筛选</strong>它们</li>
+                                <li>维护<strong>四年</strong>，迭代超过20个版本</li>
+                                <li>支持Windows/Mac/Linux系统</li>
+                                <li>无需下载，直接运行在浏览器中</li>
+                            </ul>
+                            <p>专为Pixiv.net打造的爬虫。开源、免费、易于使用</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="m-y-md hidden-md-down">
+            <div class="lead pi-buttons">
+                <a class="btn btn-outline-success" href="/md/start" role="button">开始使用</a>
+                <a class="btn btn-outline-info" href="https://github.com/pea3nut/Pxer" role="button">Github源码</a>
+            </div>
+        </div>
+    </div>
+    <% include _foot.ejs %>
+</div>
+</body>
+</html>
