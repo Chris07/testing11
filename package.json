@@ -27,7 +27,7 @@
     "babel-preset-stage-2": "^6.22.0",
     "bootstrap": "^4.0.0-alpha.6",
     "css-loader": "^0.25.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "node-sass-loader": "^0.1.7",
     "resolve-url-loader": "^1.6.0",
     "sass-loader": "^4.0.2",
