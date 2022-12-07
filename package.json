@@ -14,7 +14,7 @@
     "cross-env": "^5.2.1",
     "debug": "~2.6.3",
     "ejs": "~2.5.6",
-    "express": "~4.15.2",
+    "express": "~4.17.3",
     "marked": "^0.3.6",
     "morgan": "~1.8.1",
     "pea-styles": "0.0.2",
